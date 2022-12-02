@@ -1,0 +1,18 @@
+{
+    "name": "m3duza/germany24th_federal_cabinet_members",
+    "description": "Germany federal cabinet members",
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "lib/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mr. Luka",
+            "email": "info.tsiklauri@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "^1.6"
+    }
+}
