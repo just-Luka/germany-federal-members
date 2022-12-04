@@ -4,15 +4,13 @@ namespace Lib\Data\Model;
 
 use DateTime;
 use Exception;
-use Lib\Data\Enums\GenderEnum;
-use Lib\Data\Enums\SortEnum;
 
 class MemberModel {
 
     /**
-     * Location of json file
+     * URL address of json file
      */
-    private $file = __DIR__.'/../../../members.json';
+    private const URL = 'https://just-luka.github.io/data/germany24th_federal_members.json';
 
     /**
      * Returns all data from repository
@@ -95,7 +93,7 @@ class MemberModel {
     private function data()
     {
         try{
-            $content = file_get_contents($this->file);
+            $content = file_get_contents(self::URL);
             if(!$content){
                 throw new Exception('File not Found', 404);
             }
