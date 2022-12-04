@@ -1,9 +1,10 @@
 <?php
 
-namespace Lib\Data\Model;
+namespace Lib\Data\Models;
 
 use DateTime;
 use Exception;
+use Lib\Data\Enums\SortEnum;
 
 class MemberModel {
 
@@ -57,13 +58,13 @@ class MemberModel {
     /**
      * Returns sorted data, can be ASC or DESC
      */
-    public function sortByAge(array $arr, string $orderBy)
+    public function sortByAge(array $arr, SortEnum $orderBy)
     {
-        if($orderBy === 'asc'){
+        if($orderBy === SortEnum::ASC){
             usort($arr, fn($a, $b) => strcmp($a->age, $b->age));
         }
 
-        if($orderBy === 'desc'){
+        if($orderBy === SortEnum::DESC){
             usort($arr, fn($a, $b) => strcmp($b->age, $a->age));
         }
 
@@ -88,7 +89,7 @@ class MemberModel {
     }
 
     /**
-     * Method, responsible for reading json file.
+     * Method, responsible for reading json data.
      */
     private function data()
     {

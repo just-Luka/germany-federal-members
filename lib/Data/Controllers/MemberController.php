@@ -3,38 +3,27 @@
 namespace Lib\Data\Controllers;
 
 use Lib\Data\Enums\SortEnum;
-use Lib\Data\Model\MemberModel;
-use Lib\Presentation\HomePage;
+use Lib\Data\Models\MemberModel;
+
 
 class MemberController {
-    public function index()
-    {
-        return (new HomePage())->documentation();
-    }
-
-    public function read() 
+    public function read(SortEnum $sort = null, bool $male = null, string $party = null) 
     {
         header('Content-Type: application/json; charset=utf-8');
 
         $model = new MemberModel();        
         $data = $model->all();
 
-        if(isset($_GET['sort'])){
-            $sortReq = strtolower($_GET['sort']);
-
-            $data = $model->sortByAge($data, $sortReq);
+        if(!is_null($sort)){
+            $data = $model->sortByAge($data, $sort);
         }
 
-        if(isset($_GET['male'])){
-            $genderReq = strtolower($_GET['male']);
-            
-            $data = $model->filterGender($data, filter_var($genderReq, FILTER_VALIDATE_BOOLEAN));
+        if(!is_null($male)){
+            $data = $model->filterGender($data, $male);
         }
 
-        if(isset($_GET['party'])){
-            $partyReq = strtolower($_GET['party']);
-
-            $data = $model->filterParty($data, $partyReq);
+        if(!is_null($party)){
+            $data = $model->filterParty($data, $party);
         }
 
         echo json_encode($data);
