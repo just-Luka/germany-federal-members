@@ -1,10 +1,10 @@
 <?php
 
-namespace Lib\Data\Models;
+namespace Lib\Models;
 
 use DateTime;
 use Exception;
-use Lib\Data\Enums\SortEnum;
+use Lib\Enums\SortEnum;
 
 class MemberModel {
 

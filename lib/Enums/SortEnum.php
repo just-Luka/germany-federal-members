@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib\Data\Enums;
+namespace Lib\Enums;
 
 enum SortEnum {
     case ASC;

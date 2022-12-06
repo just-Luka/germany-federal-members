@@ -1,9 +1,9 @@
 <?php
 
-namespace Lib\Data\Controllers;
+namespace Lib\Controllers;
 
-use Lib\Data\Enums\SortEnum;
-use Lib\Data\Models\MemberModel;
+use Lib\Enums\SortEnum;
+use Lib\Models\MemberModel;
 
 
 class MemberController {
