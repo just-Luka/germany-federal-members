@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": ">=8.0.1"
+        "php": "^8.0.1"
     },
     "license": "MIT",
     "minimum-stability": "dev"
