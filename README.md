@@ -1,4 +1,4 @@
-# germany-federal-members-api
+# Germany federal members
 24. Bundeskabinett Mitglieder von Deutschland
 
 ## Overview
