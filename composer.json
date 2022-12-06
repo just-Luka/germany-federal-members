@@ -1,6 +1,7 @@
 {
     "name": "m3duza/germany24th_federal_cabinet_members",
     "description": "Germany federal cabinet members",
+    "license": "MIT",
     "type": "library",
     "autoload": {
         "psr-4": {
@@ -14,8 +15,6 @@
         }
     ],
     "require": {
-        "php": "^8.0.1"
-    },
-    "license": "MIT",
-    "minimum-stability": "dev"
+        "php": "^8.0"
+    }
 }
