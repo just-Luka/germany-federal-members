@@ -8,6 +8,11 @@
             "Lib\\": "lib/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"  
+        }
+    },
     "authors": [
         {
             "name": "Mr. Luka",

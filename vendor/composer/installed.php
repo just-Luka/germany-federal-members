@@ -3,7 +3,7 @@
         'name' => 'm3duza/germany24th_federal_cabinet_members',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '7d949300beae434fb156aeb22bf5540aa61d8c6b',
+        'reference' => '33cb547f261a8c0d8d24d774286992a22695e023',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'm3duza/germany24th_federal_cabinet_members' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '7d949300beae434fb156aeb22bf5540aa61d8c6b',
+            'reference' => '33cb547f261a8c0d8d24d774286992a22695e023',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

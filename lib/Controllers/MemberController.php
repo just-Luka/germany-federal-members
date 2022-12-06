@@ -26,6 +26,6 @@ class MemberController {
             $data = $model->filterParty($data, $party);
         }
 
-        echo json_encode($data);
+        return json_encode($data);
     }
 }
