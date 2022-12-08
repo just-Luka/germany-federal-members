@@ -2,7 +2,7 @@
 24. Bundeskabinett Mitglieder von Deutschland
 
 ## Overview
-Library helps you retrieve data about current (24th) federal memebrs and perform different actions on it, such as
+Library helps you retrieve data about current (24th) federal members and perform different actions on it, such as
   - Sort by age
   - Filter based on gender
   - Filter based on party
