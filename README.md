@@ -11,7 +11,7 @@ Library helps you retrieve data about current (24th) federal members and perform
 > $ composer require "m3duza/germany24th_federal_cabinet_members @dev"
 
 ### Requirements
-  - php 8.0 >=
+  - php ^8.0
 
 ## Example
 ```
